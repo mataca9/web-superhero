@@ -2,16 +2,33 @@ html, body {
     margin:0;
     padding:0;
     font-family: Lato;
+    height:100%;
+    width:100%;
 }
 
-body{
-    background-image: -webkit-linear-gradient(264deg, #01579b, #469ee4), url('../images/meetup-logo.png');
+.background{
+    position:absolute;
+    z-index:-1;
+    width:100%;
+}
+
+.background .background-one{
+    height:775px;
+    width:100%;
+    /*background-image: -webkit-linear-gradient(264deg, #01579b, #469ee4), url('../images/meetup-logo.png');
     background-image: -moz-linear-gradient(264deg, #01579b, #469ee4), url('../images/meetup-logo.png');
-    background-image: -o-linear-gradient(264deg, #01579b, #469ee4), url('../images/meetup-logo.png');
+    background-image: -o-linear-gradient(264deg, #01579b, #469ee4), url('../images/meetup-logo.png');*/
     background-image: url('../images/meetup-logo.png'), linear-gradient(354deg, #01579b, #469ee4);
-    background-size: 184px 240px, 100% 706.2px;
+    background-size: 184px 240px, 100% 775px;
     background-position: center 127px, 0 0;
     background-repeat:no-repeat;
+}
+
+.background .background-two{
+    height:775px;
+    width:100%;
+    background:#ffffff;
+    transform:skewY(-12deg) translateY(-170px);
 }
 
 .nav {

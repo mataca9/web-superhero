@@ -1,0 +1,86 @@
+html, body {
+    margin:0;
+    padding:0;
+    font-family: Lato;
+}
+
+body{
+    background-image: -webkit-linear-gradient(264deg, #01579b, #469ee4), url('../images/meetup-logo.png');
+    background-image: -moz-linear-gradient(264deg, #01579b, #469ee4), url('../images/meetup-logo.png');
+    background-image: -o-linear-gradient(264deg, #01579b, #469ee4), url('../images/meetup-logo.png');
+    background-image: url('../images/meetup-logo.png'), linear-gradient(354deg, #01579b, #469ee4);
+    background-size: 184px 240px, 100% 706.2px;
+    background-position: center 127px, 0 0;
+    background-repeat:no-repeat;
+}
+
+.nav {
+    background-color: #255e8a;
+    height: 50px;
+}
+
+.section {
+    text-align:center;
+    padding:0px 35px;
+    overflow:hidden;
+}
+
+.section .first-article h2 {
+    margin-top:122px;
+    margin-bottom:12px;
+    color:#ffffff;
+    font-size: 42px;
+    letter-spacing: 0.1px;
+    font-weight: normal;
+}
+
+.section .first-article p {
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    color: #d9fcff;
+}
+
+.section .second-article p {
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+    color: #6b7c93;
+}
+
+.btn {
+    width: 203px;
+    height: 40px;
+    border-radius: 4px;
+    font-size:16px;
+    box-shadow: 0 2px 4px 0 rgba(100, 100, 100, 0.5);
+    border:none;
+    line-height: 40px;
+}
+
+.btn-primary{
+    background-color: #3ecf8e;
+    color:#ffffff;
+    letter-spacing: 0.4px;
+}
+
+.btn-alternative{
+    background-color: #ffffff;
+    color:#3ecf8e;
+    letter-spacing: 0.8px;
+}
+
+.skew-background{
+    position:absolute;
+    background:#fff;
+    width:100vw;
+    height:200px;
+    z-index:-1;
+    bottom:100px;
+    left:-50px;
+    transform:rotate(-12deg);
+}
+
+.picture-holder{
+    position:relative;
+}

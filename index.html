@@ -6,13 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/main.css">
+        <script src="assets/js/jquery-3.2.1.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
     <head>
     <body>
         <div class="background">
             <div class="background-one"></div>
             <div class="background-two"></div>
             <div class="background-three"></div>
-            <div class="picture-holder"></div>
+            <div class="picture-holder first-article animate-fade-in-right"></div>
         </div>
         <header>
             <nav class="nav">
@@ -21,18 +23,23 @@
                     <div class="btn-b"></div>
                         <div class="btn-b"></div>
                 </button>
-                <ul>
-                    <li class="nav-li-center">Home</li>
-                    <li class="nav-li-center">Organization</li>
-                    <li class="nav-li-center">Agenda</li>
-                    <li>Download</li>
-                    <li>Sign in</li>
+                <ul class="nav-ul">
+                    <li class="nav-li-logo">
+                        <div class="logo-mini"></div>
+                    </li>
+                    <li>Home</li>
+                    <li>Organization</li>
+                    <li>Agenda</li>
+                    <element class="nav-li-right">
+                        <li>Sign in</li>
+                        <li>Download</li>
+                    </element>
                 </ul>
             </nav>
         </header>
 
         <section class="section">
-            <article class="first-article">
+            <article class="first-article animate-fade-in-left">
                 <header>
                     <p class="date-location">
                         <span class="badge">NEW</span>

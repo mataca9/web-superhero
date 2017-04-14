@@ -1,3 +1,5 @@
+/* reset and clear */
+
 html, body {
     margin:0;
     padding:0;
@@ -5,6 +7,18 @@ html, body {
     height:100%;
     width:100%;
 }
+a, a:link, a:visited{
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    color: #6772e5;
+}
+
+ul{
+    padding:0;
+    margin:0;
+}
+
+/* custom background */
 
 .background{
     position:absolute;
@@ -19,51 +33,237 @@ html, body {
     background-image: -moz-linear-gradient(264deg, #01579b, #469ee4), url('../images/meetup-logo.png');
     background-image: -o-linear-gradient(264deg, #01579b, #469ee4), url('../images/meetup-logo.png');*/
     background-image: url('../images/meetup-logo.png'), linear-gradient(354deg, #01579b, #469ee4);
-    background-size: 184px 240px, 100% 775px;
-    background-position: center 127px, 0 0;
+    background-size: 264px 343px, 100% 775px;
+    background-position: 131px 225px, 0 0;
     background-repeat:no-repeat;
 }
 
 .background .background-two{
-    height:775px;
+    height:825px;
     width:100%;
     background:#ffffff;
-    transform:skewY(-12deg) translateY(-170px);
+    transform:skewY(-12deg) translateY(-265px);
 }
 
-.nav {
-    background-color: #255e8a;
-    height: 50px;
+.background .background-three{
+    height:900px;
+    width:100%;
+    background:#f6f9fc;
+    transform:skewY(-12deg) translateY(-265px);
 }
+
+.background .picture-holder {
+    position:absolute;
+    top:0px;
+    right:0;
+    transform: translateY(30px);
+    background-image:url('../images/devices.png');
+    height:1344px;
+    width:666px;
+}
+
+.background .picture-holder .picture-ipad {
+    display:none;
+}
+
+.background .picture-holder .picture-devices {
+    display:block;
+}
+
+/* nav */
+nav {
+    position:absolute;
+    width:100%;
+}
+
+nav ul{
+    text-align:center;
+}
+
+nav ul li{
+    display:inline-block;
+    color:#ffffff;
+    font-size: 17px;
+    letter-spacing: 0.3px;
+    padding:36px;
+}
+
+nav .nav-button {
+    display:none;
+}
+
+/* body */
 
 .section {
-    text-align:center;
-    padding:0px 35px;
+    padding:35px 0px 0px 200px;
     overflow:hidden;
 }
 
+.section article p {
+    font-size: 17px;
+    line-height: 1.53;
+    letter-spacing: 0.5px;
+}
+
+.section article .icon {
+    margin: 0 auto;
+}
+
+.section article h2 {
+    position:relative;
+}
+
+/* article 1 */
+
+.section .first-article {
+    padding-top:122px;
+    box-sizing: border-box;
+    height:815px;
+}
+
+.section .first-article .date-location{
+    background: rgba(16, 20, 63, 0.35);
+    width:fit-content;
+    font-size:14px;
+    padding:2px 20px;
+    border-radius:25px;
+}
+
 .section .first-article h2 {
-    margin-top:122px;
     margin-bottom:12px;
     color:#ffffff;
     font-size: 42px;
     letter-spacing: 0.1px;
     font-weight: normal;
+    max-width:510px;
 }
 
 .section .first-article p {
-    font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.3px;
     color: #d9fcff;
+    max-width:510px;
+}
+
+/* article 2 */
+
+.section .second-article {
+    box-sizing: border-box;
+    height:580px;
+}
+
+.section .second-article h2{
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  color: #24b47e;
+  padding-bottom:0;
+  margin-bottom:35px;
+  max-width:450px;
+  line-height:65px;
+  text-align:right;
+}
+
+.section .second-article .icon {
+    float:right;
+    margin-left:22px;
 }
 
 .section .second-article p {
-    font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.4px;
     color: #6b7c93;
+    text-align:right;
+    max-width: 450px;
 }
+
+.section .second-article footer{
+    margin-top:30px;
+}
+
+.section .second-article footer .arrow{
+    margin-left:7px;
+}
+
+/* article 3 */
+
+.section .third-article {
+    text-align:center;
+    height:870px;
+    margin-left: -200px;
+}
+
+.section .third-article p {
+    margin:0 auto;
+    max-width: 725px;
+    color: #6b7c93;
+}
+
+.section .third-article h2{
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  color: #24b47e;
+  padding-bottom:0;
+  max-width:450px;
+  margin:0 auto;
+}
+
+.section .third-article h2 span{
+    display:block;
+    margin-top:36px;
+    margin-bottom:22px;
+}
+
+.section .third-article footer .btn-agenda{
+    display:none;
+}
+
+.section .third-article footer{
+    margin-top:95px;
+}
+
+/* article 4 */
+.section .fourth-article {
+    position:relative;
+    height:400px;
+}
+
+.section .fourth-article h2 {
+  font-size: 30px;
+  letter-spacing: 0.9px;
+  color: #32325d;
+  margin:0;
+}
+
+.section .fourth-article h2:first-child {
+    color: #24b47e;
+    margin-bottom:12px;
+}
+
+.section .fourth-article .block {
+    height:48px;
+    top:180px;
+    position:absolute;
+}
+
+.section .fourth-article .block-left {
+    left:0;
+}
+
+.section .fourth-article .block-right {
+    right:200px;
+    transform:translateY(50%);
+}
+
+.section .fourth-article .block-right button + button{
+    margin-left:22px;
+}
+
+
+/* buttons & elements */
 
 .btn {
     width: 203px;
@@ -87,17 +287,268 @@ html, body {
     letter-spacing: 0.8px;
 }
 
-.skew-background{
-    position:absolute;
-    background:#fff;
-    width:100vw;
-    height:200px;
-    z-index:-1;
-    bottom:100px;
-    left:-50px;
-    transform:rotate(-12deg);
+.badge{
+    border-radius: 25px;
+    background: #24b47e;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 1px 5px;
+    margin-right: 5px;
+    margin-left: -15px;
+    line-height: 22px;
 }
 
-.picture-holder{
-    position:relative;
+.icon{
+    width:65px;
+    height:65px;
+}
+
+.icon-organization {
+    background: url('../icons/organization.png');
+}
+
+.icon-agenda {
+    background: url('../icons/agenda.png');
+}
+
+.arrow {
+    background: url('../icons/arrow.svg') no-repeat;
+    width:10px;
+    height:10px;
+    display:inline-block;
+}
+
+.separator{
+    margin-top:60px;
+    margin-left:-50px;
+    width: 500px;
+    height: 2px;
+    background-color: #f1f7fb;
+}
+
+/* agenda component */
+
+.agenda-item {
+  width: 514px;
+  height: 101.6px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 23px 0 #e4e6e9;
+  position:relative;
+  margin:0 auto;
+  margin-bottom:14px;
+  position:relative;
+}
+
+.agenda-item:not(:last-child):after {
+    position: absolute;
+    bottom: -14px;
+    height: 14px;
+    margin-top: 10px;
+    content: "";
+    border-left: 2px solid #e6ebef;
+}
+
+.agenda-item .agenda-item-day {
+  width: 60px;
+  height: 57px;
+  font-family: Lato;
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: 1.9px;
+  text-align: center;
+  color: #8c96ab;
+  float:left;
+  margin-left:30px;
+  line-height: 101.6px;
+}
+
+.agenda-item .agenda-item-date {
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    left:115px;
+}
+
+.agenda-item .agenda-item-date p {
+    width: 115px;
+    height: 18px;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    color: #6b7897;
+    text-align:left;
+}
+
+.agenda-item .agenda-item-count {
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    right:34px;
+    width: 64px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #ff6260;
+    line-height: 40px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+/* mobile */
+
+@media screen and (max-width: 785px) {
+    /* background */
+    .background .picture-holder{
+        background-image:url('../images/ipad.png');
+        background-position: 350px 350px;
+        background-repeat:no-repeat;
+    }
+
+    .background .picture-holder .picture-ipad {
+        display:block;
+    }
+
+    .background .picture-holder .picture-devices {
+        display:none;
+    }
+
+    .background .background-one{
+        background-size: 184px 240px, 100% 775px;
+        background-position: center 127px, 0 0;
+    }
+
+    .background .background-three{
+        height: 550px;
+    }
+
+
+    /* nav */
+    .nav {
+        background-color: #255e8a;
+        height: 50px;
+    }
+
+    nav ul{
+        margin-top: 49px;
+        float:right;
+        text-align:right;
+        background:#255e8a;
+        box-shadow:0px 5px 5px -3px rgba(0,0,0,0.7);
+        display:none;
+    }
+
+    nav ul li{
+        display:block;
+        padding: 10px 20px;
+        width:100px;
+    }
+
+    nav .nav-button {
+        display:block;
+        border:none;
+        background:none;
+        position:absolute;
+        right: 10px;
+        top:15px;
+    }
+
+    nav .nav-button .btn-b {
+        width: 24px;
+        height: 3px;
+        border-radius: 25px;
+        background-color: #ffffff;
+        margin-bottom:4px;
+    }
+
+    /* body */
+
+    .section{
+        padding: 0 35px;
+        text-align:center;
+    }
+
+    .section article p {
+        font-size: 14px;
+    }
+
+    .section .first-article h2,
+    .section .first-article p,
+    .section .second-article h2,
+    .section .second-article p {
+        text-align:center;
+    }
+
+    /* article 1 */
+
+    .section .first-article {
+        height:950px;
+    }
+
+    .section .first-article .date-location{
+        display:none;
+    }
+
+    /* article 2 */
+
+    .section .second-article {
+        height:480px;
+    }
+
+    .section .second-article p {
+        margin: 0 -10px;
+    }
+
+    .section .second-article .icon{
+        position:absolute;
+        left:50%;
+        transform:translate(-50%, -125px)
+    }
+
+    .section .second-article footer {
+        display:none;
+    }
+
+    /* article 3 */
+
+    .section .third-article {
+        margin-left: 0;
+        height: 550px;
+    }
+
+    .section .third-article footer{
+        margin-top:0;
+    }
+
+    .section .third-article footer .btn-agenda{
+        transform:translateY(55px);
+        display:block;
+        margin:0 auto;
+    }
+
+    .section .third-article footer .agenda-item{
+        display:none;
+    }
+
+    /* article 4 */
+
+    .section .fourth-article h2:first-child {
+        display:none;
+    }
+
+    .section .fourth-article .block
+    {
+        top: 0px;
+    }
+
+    .section .fourth-article .block-right{
+        transform:translateY(127px);
+        right:initial;
+    }
+
+    .section .fourth-article .block-right button{
+        margin-bottom:32px;
+    }
+
+
 }

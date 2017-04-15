@@ -426,6 +426,20 @@ nav .nav-button {
     color: #ffffff;
 }
 
+.agenda-item.alternative {
+    background:#60cdff;
+}
+
+.agenda-item.alternative .agenda-item-day,
+.agenda-item.alternative .agenda-item-date p {
+    color:#ffffff;
+}
+
+.agenda-item.alternative .agenda-item-count {
+    background:#ffffff;
+    color:#8c96ab;
+}
+
 /* medium device */
 @media screen and (max-width: 1250px) {
     .background .picture-holder{
